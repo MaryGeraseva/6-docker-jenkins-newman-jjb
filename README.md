@@ -1,12 +1,15 @@
 # Jenkins + Jenkins job builder + Newman docker image
 There is my version of Jenkins docker image.   
-It based on the official Jenkins docker image and also includes Node.js, Newman, Python, PIP, VIM, and Jenkins job builder.       
+This image based on the [official Jenkins docker image](https://hub.docker.com/_/jenkins) and also includes Node.js, Newman, Python, PIP, VIM, and Jenkins job builder.       
 This is a fully completed solution for working with Jenkins, Jenkins job builder, and Postman collections.  
 
 ## Tools
 Docker, Jenkins, Jenkins job builder, Node.js, Newman, Python, PIP, VIM
 
 ## Usage
+
+###Common
+Usage information official Jenkins docker image [here](https://github.com/jenkinsci/docker/blob/master/README.md)
 
 ### How to create docker container and start Jenkins
 * open command line
