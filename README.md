@@ -26,35 +26,10 @@ Usage information official Jenkins docker image [here](https://github.com/jenkin
 
 
 ### How to add jobs with Jenkins job builder
-Jenkins job builder (JJB) is an additional application which takes simple descriptions of Jenkins jobs in YAML or JSON format and uses them to configure Jenkins.  
-I use Jenkins jobs builder files from [my previous project](https://github.com/MaryGeraseva/4-jenkins-job-builder) as an example.
+Jenkins job builder (JJB) is an additional application which takes simple descriptions of Jenkins jobs in YAML or JSON format and uses them to configure Jenkins. 
+More information about Jenkins job builder [here](https://docs.openstack.org/infra/jenkins-job-builder/) 
+Sample files and usage in [my project](https://github.com/MaryGeraseva/4-jenkins-job-builder).
 
-* open personal configuration `localhost:8080/me/configure`
-
-![alt text](https://github.com/MaryGeraseva/screenshots/blob/master/configure.png)
-
-* add user token
-
-![alt text](https://github.com/MaryGeraseva/screenshots/blob/master/add%20token.png)
-
-* generate and copy user token
-
-![alt text](https://github.com/MaryGeraseva/screenshots/blob/master/generate%20tocken.png)
-
-![alt text](https://github.com/MaryGeraseva/screenshots/blob/master/copy%20tocken.png)
-
-* go into docker container as root `docker exec -u 0 -it [$container-name] bash`
-* clone repository with JJB files `git clone https://github.com/MaryGeraseva/4-jenkins-job-builder.git`
-* go to folder with JJB files `cd 4-jenkins-job-builder/linux`
-* open configuration file jenkins_jobs.ini in Vim `vim jenkins_jobs.ini`
-  * input  `i` and correct personal authentication data `[$user-name]` and `[$user-token]`
-  * input `Esc` or `Ctrl+C`
-  * input `:wq` for saving and quit
-* add jobs with JJB from command-line  
-`jenkins-jobs --conf ./jenkins_jobs.ini update ./jobs.yaml`
-* check changes in your Jenkins
-
-More information about Jenkins job builder [here](https://docs.openstack.org/infra/jenkins-job-builder/)
 
 ## For feedback
 **e-mail:** mary.geraseva@gmail.com  
