@@ -27,7 +27,7 @@ Usage information official Jenkins docker image [here](https://github.com/jenkin
 
 ### How to add jobs with Jenkins job builder
 Jenkins job builder (JJB) is an additional application which takes simple descriptions of Jenkins jobs in YAML or JSON format and uses them to configure Jenkins. 
-More information about Jenkins job builder [here](https://docs.openstack.org/infra/jenkins-job-builder/) 
+More information about Jenkins job builder [here](https://docs.openstack.org/infra/jenkins-job-builder/).  
 Sample files and usage in [my project](https://github.com/MaryGeraseva/4-jenkins-job-builder).
 
 
